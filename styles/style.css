@@ -1,10 +1,15 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
 /* common styles or utilities */
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
+    width: 1440px;
+}
+main{
+    background-color: #FFFFFF;
 }
 
 /* top banner style */
@@ -12,7 +17,6 @@ header{
     display: flex;
     background-color: #2D25A0;
     height: 677px;
-    width: 1440px;
 }
 .top-banner{
     margin: 150px 102px 165px 156px;
@@ -62,27 +66,47 @@ header{
     font-weight: 700;
     color: #18191F;
     margin: 0px;
+    padding: 1px 15px 0px 15px ;
 
 }
 .player p{
     color: #6C6C6C;
     font-size: 16px;
     margin: 0px;
+    padding: 10px 15px 33px 15px;
 }
 .player img{
     height: 256px;
     width: 300px;
-    padding: 15px 15px 0px 15px;
+    padding: 15px;
 }
 /* footer style */
 footer{
     width: 483.87px;
     height: 213px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 481px 63px 471px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    height: 110px;
+}
+.logo img{
+   width: 262.1px;
+}
+.logo p{
+    font-family: 'Niconne', cursive;
+    font-size: 72.58px;
+    color: #10437A;
 }
 .footer-icon{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: 20px 164px 6px 164px ;
 }
 .copyright{
-    text-align: center;
+    font-size: 18px;
+    margin: 0px 124px;
 }
