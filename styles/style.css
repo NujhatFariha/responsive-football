@@ -1,8 +1,12 @@
-/* fonts */
+/*-------
+ fonts 
+---------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
-/* common styles or utilities */
+/*-------- ----------------
+common styles or utilities
+--------------------------- */
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
@@ -11,8 +15,12 @@ body{
 main{
     background-color: #FFFFFF;
 }
-
-/* top banner style */
+.container{
+    margin: 70px 210px 165px 180px;
+}
+/*-------------
+ top banner style
+ ----------------- */
 header{
     display: flex;
     background-color: #2D25A0;
@@ -21,7 +29,6 @@ header{
 .top-banner{
     margin: 150px 102px 165px 156px;
 }
-
 .top-banner h1{
     color: #FFFFFF;
     font-weight: 700;
@@ -37,29 +44,47 @@ header{
     font-weight: 500;
     color: #FFFFFF;
     padding: 10px 24px;
+    transition: 1s ease-in-out;
 }
-.fa-arrow-right{
+.anchor-button .fa-arrow-right{
     padding-left: 8px;
     width: 24px;
     height: 24px;
+}
+.anchor-button:hover{
+    width: 350px;
+    height: 60px;
+    font-size: 30px;
+    background-color: blueviolet;
 }
 .banner-image img{
     height: 456px;
     width: 556.01px;
     margin: 135px 141px 86px 0px;
+    transition: 0.5s ease;  
 }
-/* player style */
+.banner-image img:hover{
+    transform: scale( 0.85) rotate(35deg);
+    transform-origin: top left bottom;
+}
+/*----------------- 
+  player style
+----------------------- */
 .players{
     display: grid;
     grid-template-columns:repeat(3, 1fr) ;
     grid-column-gap: 30px;
     grid-row-gap: 27px;
-    padding: 70px 210px 165px 180px;
 }
 .player{
     height: 474px;
     width: 330px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    height: 256px;
+    width: 300px;
+    padding: 15px;
 }
 .player h2{
     font-size: 28px;
@@ -75,12 +100,9 @@ header{
     margin: 0px;
     padding: 10px 15px 33px 15px;
 }
-.player img{
-    height: 256px;
-    width: 300px;
-    padding: 15px;
-}
-/* footer style */
+/*---------
+ footer style
+ -------------- */
 footer{
     width: 483.87px;
     height: 213px;
