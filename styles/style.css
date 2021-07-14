@@ -138,6 +138,9 @@ news style
     display: flex;
     flex-direction: column;
 }
+/*----------------------
+ subscribe section style 
+ -------------------------*/
 .subscribe{
     width: 50%;
     margin-left: 150px;
@@ -154,6 +157,10 @@ news style
     padding: 10px;
     margin-bottom: 40px;
     border-radius: 20px;
+}
+#signup button:focus{
+    color: rgb(85, 36, 69);
+    font-weight: 900;
 }
 
 /*---------
@@ -188,4 +195,45 @@ footer{
 .copyright{
     font-size: 18px;
     margin: 0px 124px;
+}
+
+/*--------------
+ Media Queries 
+ ---------------*/
+
+ /* mobile devices */
+@media only screen and (max-width: 688px) {
+    body main  {
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px auto;
+        align-items: center;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+    }
+    .container{
+        align-items: center;
+    }
+    .banner-image img{
+        height: 100%;
+        width: 100%;
+    }
+  .players{
+      grid-template-columns: repeat(1, 1fr);
+  }
+  .top-banner .player .news {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0%;
+      width: 100%;
+  }
+  footer{
+      text-align: center;
+  }
 }
